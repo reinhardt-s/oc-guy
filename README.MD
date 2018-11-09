@@ -9,8 +9,8 @@ You can get it here: https://github.com/openshift/origin/releases
 ### List your projects
 ![oc-guy](/pics/guy.PNG "Damn awesome oc-guy")
 ### Show secrets from project
-![oc-guy](/pics/secret.PNG "Damn awesome oc-guy")
-![oc-guy](/pics/secret-json.PNG "Damn awesome oc-guy")
+![oc-guy](/pics/secrets.PNG "Damn awesome oc-guy")
+![oc-guy](/pics/secrets-json.PNG "Damn awesome oc-guy")
 ### Interact with pods per project
 #### Show pod infos
 ![oc-guy](/pics/info.PNG "Damn awesome oc-guy")
