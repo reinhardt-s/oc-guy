@@ -22,6 +22,6 @@ You can get it here: https://github.com/openshift/origin/releases
 ![oc-guy](/pics/ssh.PNG "Damn awesome oc-guy")
 #### Forward port to pod
 ![oc-guy](/pics/forward.PNG "Damn awesome oc-guy")
-![oc-guy](/pics/forward-log.PNG "Damn awesome oc-guy")
+![oc-guy](/pics/forwarding-log.PNG "Damn awesome oc-guy")
 ### Show active local ports, info's to its process and terminate it 
 ![oc-guy](/pics/active-ports.PNG "Damn awesome oc-guy")
