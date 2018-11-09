@@ -26,14 +26,36 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         guy.cpp \
+    forwarding.cpp \
+    loadingthread.cpp \
     logindialog.cpp \
-    forwarding.cpp
+    logwindow.cpp \
+    pod.cpp \
+    logmainwindow.cpp \
+    secrets.cpp \
+    secret.cpp \
+    searchhit.cpp
 
 HEADERS += \
         guy.h \
+    forwarding.h \
+    loadingthread.h \
     logindialog.h \
-    forwarding.h
+    logwindow.h \
+    pod.h \
+    logmainwindow.h \
+    secrets.h \
+    secret.h \
+    searchhit.h
 
 FORMS += \
         guy.ui \
-    logindialog.ui
+    logindialog.ui \
+    logwindow.ui \
+    logmainwindow.ui \
+    secrets.ui
+
+DISTFILES += \
+    ocguy.rc
+
+RC_FILE = ocguy.rc

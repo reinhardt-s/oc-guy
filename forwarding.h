@@ -3,13 +3,11 @@
 
 #include <QProcess>
 #include <QListWidgetItem>
+#include "LogMainWindow.h"
 
-class Forwarding
-{
+class Forwarding {
 public:
     Forwarding(QProcess *process, QString ident, QListWidgetItem *item);
-
-
 
     QString getIdent() const;
 
@@ -17,10 +15,14 @@ public:
 
     QListWidgetItem *getItem() const;
 
+    LogMainWindow *getLogMainWindow() const;
+
 private:
     QProcess *process;
     QListWidgetItem *item;
     QString ident;
+    LogMainWindow *logWindow;
+
 };
 
 #endif // FORWARDING_H
