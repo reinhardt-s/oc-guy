@@ -1,5 +1,6 @@
 # OC-GUY
-OC-GUY helps developer to interact with pods in red hats PaaS solution OpenShift (origin)
+OC-Guy was made with Qt, love and coffee. Feel free to use and extend it.
+It is designed to help developers to interact with pods in red hats PaaS solution OpenShift (origin).
 
 In order to get it running you need to have the oc command line tools on your machine (either system wide or placed in the same folder as oc-guy).
 You can get it here: https://github.com/openshift/origin/releases
