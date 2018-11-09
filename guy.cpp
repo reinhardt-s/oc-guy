@@ -223,7 +223,8 @@ void Guy::stopForwarding() {
     for (int i = 0; i < forwardings.size(); ++i) {
         if (forwardings.at(i).getIdent() == ui->forwards->currentItem()->text()) {
             forwardings.at(i).getItem()->~QListWidgetItem();
-            forwardings.at(i).getProcess()->close();
+            if ( forwardings.at(i).getProcess() )
+                forwardings.at(i).getProcess()->close();
             forwardings.removeAt(i);
             break;
         }
