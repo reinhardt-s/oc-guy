@@ -6,6 +6,13 @@ LoginDialog::LoginDialog(QWidget *parent, QComboBox *projects) :
         QDialog(parent),
         ui(new Ui::LoginDialog) {
     ui->setupUi(this);
+
+    QSettings settings("guy.ini",
+                       QSettings::IniFormat);
+
+    ui->target->addItem(settings.value("target").toString());
+    ui->username->setText(settings.value("username").toString());
+
     ui->progressBar->setVisible(false);
     this->ocProcess = new QProcess();
     connect(ocProcess, SIGNAL(finished(int)), this, SLOT(processOutput()));
@@ -58,6 +65,10 @@ void LoginDialog::processOutput() {
     QString err = ocProcess->readAllStandardError();
     if (out.length() > 1 && (out.startsWith("Login successful.") || out.startsWith("Logged into"))) {
         qDebug() << out;
+        QSettings settings("guy.ini",
+                           QSettings::IniFormat);
+        settings.setValue("target", ui->target->currentText());
+        settings.setValue("username", ui->username->text());
         this->done(200);
     } else if (out.length() > 1) {
         QMessageBox::critical(this, "Error while trying to connect to " + ui->target->currentText(), out);

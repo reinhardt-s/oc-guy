@@ -6,6 +6,7 @@
 #include <QDebug>
 #include <QMessageBox>
 #include <QComboBox>
+#include <QSettings>
 
 namespace Ui {
     class LoginDialog;

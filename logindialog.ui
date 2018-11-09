@@ -58,13 +58,8 @@
           <bool>true</bool>
          </property>
          <property name="currentText">
-          <string>https://os-node1:8443</string>
+          <string/>
          </property>
-         <item>
-          <property name="text">
-           <string>https://os-node1:8443</string>
-          </property>
-         </item>
         </widget>
        </item>
       </layout>
