@@ -5,6 +5,8 @@ It is designed to help developers to interact with pods in red hats PaaS solutio
 In order to get it running you need to have the oc command line tools on your machine (either system wide or placed in the same folder as oc-guy).
 You can get it here: https://github.com/openshift/origin/releases
 
+Quickstart for Windows user: Just load the binaries: https://github.com/FrontSchaaf/oc-guy/tree/master/bin/Windows_MinGW_32bit
+
 ## What can OC-GUY do for you?
 
 ### List your projects
